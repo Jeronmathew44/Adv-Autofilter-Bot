@@ -16,8 +16,8 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/EvamariaTG/EvaMaria",
-    "repository": "https://github.com/EvamariaTG/EvaMaria",
+    "website": "https://github.com/Mrz-Botz/Adv-Autofilter-Bot-",
+    "repository": "https://github.com/Mrz-Botz/Adv-Autofilter-Bot-",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
