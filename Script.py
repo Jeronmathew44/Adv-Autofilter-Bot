@@ -12,7 +12,7 @@ I Cᴀɴ Pʀᴏᴠɪᴅᴇ Mᴏᴠɪᴇ Fᴏʀ Yᴏᴜ Jᴜsᴛ Aᴅᴅ Mᴇ Iɴ
 
     SOURCE_TXT = """
 
-- Source - """ 
+- Source - https://github.com/Mrz-Botz/Adv-Autofilter-Bot- """ 
     
 
     OWNER_INFO = """
