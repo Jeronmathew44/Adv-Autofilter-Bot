@@ -59,6 +59,13 @@ async def fil_mod(client, message):
         await m.edit("Use: /autofilter on OR /autofilter off")
 
 
+@Client.on_message(filters.private & filters.text & filters.incoming)
+async def pv_filter(client, message):
+    kd = await global_filters(client, message)
+    if kd == False:
+        await auto_filter(client, message)
+
+
 @Client.on_message((filters.group) & filters.text & filters.incoming)
 async def give_filter(client,message):
     await global_filters(client, message)
