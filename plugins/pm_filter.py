@@ -591,7 +591,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "socr":
         buttons = [[
-            InlineKeyboardButton('ʀᴇᴘᴏ', url='t.me/njanchathuda'),
+            InlineKeyboardButton('ʀᴇᴘᴏ', url='https://github.com/Mrz-Botz/Adv-Autofilter-Bot-'),
             InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
