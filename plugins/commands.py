@@ -47,7 +47,7 @@ async def start(client, message):
             InlineKeyboardButton('🔍 Sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
             InlineKeyboardButton('🧑‍💻 ᴅᴇᴠ​', callback_data='owner_info')
         ],[
-            InlineKeyboardButton('❗ Hᴇʟᴘ ', callback_data='owner_info'),
+            InlineKeyboardButton('❗ Hᴇʟᴘ ', callback_data='help'),
             InlineKeyboardButton('🕵️‍♂️ Aʙᴏᴜᴛ', callback_data='about'),
         ],[
             InlineKeyboardButton('⛔ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ ⛔', url=(MAIN_CHANNEL))
@@ -95,7 +95,7 @@ async def start(client, message):
             InlineKeyboardButton('🔍 Sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
             InlineKeyboardButton('🧑‍💻 ᴅᴇᴠ​', callback_data='owner_info')
         ],[
-            InlineKeyboardButton('❗ Hᴇʟᴘ ', callback_data='owner_info'),
+            InlineKeyboardButton('❗ Hᴇʟᴘ ', callback_data='help'),
             InlineKeyboardButton('🕵️‍♂️ Aʙᴏᴜᴛ', callback_data='about'),
         ],[
             InlineKeyboardButton('⛔ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ ⛔', url=(MAIN_CHANNEL))
