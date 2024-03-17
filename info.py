@@ -42,15 +42,15 @@ class evamaria(Client):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(os.environ.get('API_ID', ''))
-API_HASH = os.environ.get('API_HASH', '')
-BOT_TOKEN = os.environ.get('BOT_TOKEN', '')
+API_ID = int(os.environ.get('API_ID', '24351291'))
+API_HASH = os.environ.get('API_HASH', 'ed3c922b4dc9f20b55911903f3fb61f3')
+BOT_TOKEN = os.environ.get('BOT_TOKEN', '7175451218:AAGduvsU4Z3C2y9yz1adL1bKo5h4Nx8EfBA')
 
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
-PICS = (environ.get('PICS', '')).split()
+PICS = (environ.get('PICS', 'https://graph.org/file/f5f289b9f3f4e450d7929.jpg')).split()
 NOR_IMG = environ.get('NOR_IMG', "https://graph.org/file/f5f289b9f3f4e450d7929.jpg")
 SPELL_IMG = environ.get('SPELL_IMG',"https://telegra.ph/file/b58f576fed14cd645d2cf.jpg")
 
@@ -75,8 +75,9 @@ TMP_DOWNLOAD_DIRECTORY = environ.get("TMP_DOWNLOAD_DIRECTORY", "./DOWNLOADS/")
 COMMAND_HAND_LER = environ.get("COMMAND_HAND_LER", "/")
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://VJ:VJ@cluster0.odxntvn.mongodb.net/")
+SECONDDB_URI = environ.get('SECONDDB_URI', None)
+DATABASE_NAME = environ.get('DATABASE_NAME', "myrepurathura")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 MONGO_URL = os.environ.get('MONGO_URL', "")
 
@@ -91,7 +92,7 @@ MAIN_CHANNEL = environ.get('MAIN_CHANNEL',"https://t.me/tgxmall_movie")
 FILE_FORWARD = environ.get('FILE_FORWARD',"")
 MSG_ALRT = environ.get('MSG_ALRT', '𝑪𝑯𝑬𝑪𝑲 & 𝑻𝑹𝒀 𝑨𝑳𝑳 𝑴𝒀 𝑭𝑬𝑨𝑻𝑼𝑹𝑬𝑺')
 FILE_CHANNEL = int(environ.get('FILE_CHANNEL', ''))
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002019072066'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'supprt')  # with out this @
 AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "False")), False)
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
