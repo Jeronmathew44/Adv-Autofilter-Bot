@@ -534,7 +534,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🔍 Sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
             InlineKeyboardButton('🧑‍💻 ᴅᴇᴠ​', callback_data='owner_info')
         ],[
-            InlineKeyboardButton('❗ Hᴇʟᴘ ', callback_data='owner_info'),
+            InlineKeyboardButton('❗ Hᴇʟᴘ ', callback_data='help'),
             InlineKeyboardButton('🕵️‍♂️ Aʙᴏᴜᴛ', callback_data='about'),
         ],[
             InlineKeyboardButton('⛔ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ ⛔', url=(MAIN_CHANNEL))
@@ -626,12 +626,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='start'),
             InlineKeyboardButton('✧ ᴄᴏɴᴛᴀᴄᴛ​', url='t.me/njanchathuda')
         ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await client.edit_message_media(
-            query.message.chat.id, 
-            query.message.id, 
-            InputMediaPhoto(random.choice(PICS))
-        )
         await query.message.edit_text(
             text=script.OWNER_TXT,
             reply_markup=reply_markup,
