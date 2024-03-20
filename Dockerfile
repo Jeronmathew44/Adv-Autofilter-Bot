@@ -14,6 +14,6 @@ RUN pip install --upgrade pyrogram
 
 RUN pip install tqdm
 
-COPY ..
+COPY ..source.txt
 
 CMD ["python3", "bot.py"]
